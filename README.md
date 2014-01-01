@@ -1,4 +1,4 @@
-# express-error
+# express-error-with-sources
 
 Enhanced express 3 error handler which displays source code within error stack for
 JavaScript.
@@ -8,10 +8,8 @@ Open sourced by [Barc](http://barc.com), instant real-time forum on any website.
 ## Usage
 
 ```javascript
-var expressError = require('express-error-native');
-
 app.configure('development', function() {
-  app.use(expressError({contextLinesCount: 3, handleUncaughtException: true}));
+  app.use(require('express-error-with-sources')({contextLinesCount: 3}));
 });
 ```
 
@@ -26,7 +24,7 @@ app.configure('development', function() {
 
 ## Screenshot
 
-![screenshot](https://github.com/floatdrop/express-error-native/raw/master/img/stack.png)
+![screenshot](https://github.com/floatdrop/express-error-with-sources/raw/master/img/stack.png)
 
 ## License
 

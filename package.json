@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/floatdrop/express-error-native.git",
+  "repository": "https://github.com/floatdrop/express-error-with-sources.git",
   "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
   "license": "MIT",
   "devDependencies": {
