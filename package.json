@@ -8,13 +8,19 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover _mocha --report lcovonly -- test/*.js --reporter list --timeout 100000"
   },
   "repository": "https://github.com/floatdrop/express-error-with-sources.git",
   "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "express": "~3.2.4",
-    "jade": "*"
+    "mocha": "~1.15.1",
+    "proxyquire": "~0.5.1",
+    "sinon": "~1.7.3",
+    "coveralls": "~2.6.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "istanbul": "~0.1.44",
+    "supertest": "~0.8.2"
   }
 }
