@@ -17,4 +17,5 @@ html(lang="en")
                         li= line
                     else
                         li.source
-                            pre= line
+                            pre.prettyprint.lang-javascript= line
+        script(src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js')

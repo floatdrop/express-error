@@ -167,3 +167,7 @@ li.source, li.source pre {
 #stacktrace li {
     margin: 0px;
 }
+
+.prettyprint {
+    border: 0px;
+}
