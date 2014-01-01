@@ -1,8 +1,11 @@
 {
   "name": "express-error-with-sources",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Display source code in express' error stack for JavaScript",
-  "keywords": ["express3", "error"],
+  "keywords": [
+    "express3",
+    "error"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
