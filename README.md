@@ -15,11 +15,7 @@ app.configure('development', function() {
 
 ## Options
 
-```javascript
-{
-    contextLinesCount: Integer         // Number of lines to insert before and after the error line.
-}
-```
+ * `contextLinesCount` - Number of lines to insert before and after the error line (default: `3`)
 
 ## Example output
 
