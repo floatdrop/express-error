@@ -169,5 +169,5 @@ li.source, li.source pre {
 }
 
 .prettyprint {
-    border: 0px;
+    border: 0 !important;
 }
