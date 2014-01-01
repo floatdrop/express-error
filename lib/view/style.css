@@ -146,7 +146,7 @@ ul.source {
     margin-left: 6px;
 }
 
-.source li, .source pre {
+li.source, li.source pre {
     margin: 0;
     padding: 0;
 }
