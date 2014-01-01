@@ -1,9 +1,7 @@
 # express-error-with-sources
 
-Enhanced express 3 error handler which displays source code within error stack for
+Enhanced express 3 error handler which inserts source code within error stack for
 JavaScript.
-
-Open sourced by [Barc](http://barc.com), instant real-time forum on any website.
 
 ## Usage
 
@@ -17,14 +15,9 @@ app.configure('development', function() {
 
 ```javascript
 {
-    contextLinesCount: Integer,         // Number of lines to insert before and after the error line.
-    title: String                       // The title for HTML error page
+    contextLinesCount: Integer         // Number of lines to insert before and after the error line.
 }
 ```
-
-## Screenshot
-
-![screenshot](https://github.com/floatdrop/express-error-with-sources/raw/master/img/stack.png)
 
 ## License
 
