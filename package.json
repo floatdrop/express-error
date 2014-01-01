@@ -13,6 +13,9 @@
   "repository": "https://github.com/floatdrop/express-error-with-sources.git",
   "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "jade": "~1.0.2"
+  },
   "devDependencies": {
     "express": "~3.2.4",
     "mocha": "~1.15.1",

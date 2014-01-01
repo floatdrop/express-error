@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        title= title
+        | <style type='text/css'>
+        include style.css
+        | </style>
+    body
+        div#wrapper
+            h1= title
+            h2
+                em= statusCode
+                = error
+            ul#stacktrace
+                each line in stack
+                    if line.indexOf('    at') === 0
+                        li= line
+                    else
+                        li
+                            pre= line
