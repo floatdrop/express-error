@@ -35,6 +35,7 @@ describe('main tests', function () {
         });
         request(this.app)
             .get('/error')
-            .expect(/<html/g, done);
+            .expect(/<html/g)
+            .expect(/SECRETLINE/, done);
     });
 });
