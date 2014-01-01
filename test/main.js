@@ -15,11 +15,5 @@ describe('GET /ping', function () {
         request(app)
             .get('/error')
             .expect(/SECRETLINE/g, done);
-            /*.end(function (err) {
-                assert.ok(err, 'Error is not generated');
-                assert.ok(err.stack, 'Error stack is lost');
-                assert.ok(err.stack.indexOf('SECRETLINE') !== -1, 'Sources is not included in stack');
-                done();
-            });*/
     });
 });
