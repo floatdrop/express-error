@@ -16,7 +16,8 @@ app.configure('development', function() {
 ## Options
 
  * `contextLinesCount` - Number of lines to insert before and after the error line (default: `3`)
- * `sendHtml` - Instead passing by modified error, send user nice html with it (default: false)
+ * `sendHtml` - Instead passing by modified error, send user nice html with it (default: `false`)
+ * `title` - Title of html error page (default: `Error`)
 
 ## Screenshot 
 
