@@ -1,17 +1,17 @@
 # express-error
 
 Enhanced express 3 error handler which displays source code within error stack for
-JavaScript and CoffeeScript.
+JavaScript.
 
 Open sourced by [Barc](http://barc.com), instant real-time forum on any website.
 
 ## Usage
 
 ```javascript
-var expressError = require('express-error');
+var expressError = require('express-error-native');
 
 app.configure('development', function() {
-  app.use(expressError.express3({contextLinesCount: 3, handleUncaughtException: true}));
+  app.use(expressError({contextLinesCount: 3, handleUncaughtException: true}));
 });
 ```
 
@@ -20,21 +20,13 @@ app.configure('development', function() {
 ```javascript
 {
     contextLinesCount: Integer,         // Number of lines to insert before and after the error line.
-    handleUncaughtException: Boolean,   // Whether to handle uncaught exception.
     title: String                       // The title for HTML error page
 }
 ```
 
 ## Screenshot
 
-![screenshot](https://github.com/barc/express-error/raw/master/img/stack.png)
-
-## To run the example and see error
-
-    npm install -d
-    node example/app.js
-
-    # browse http://localhost:3000/error
+![screenshot](https://github.com/floatdrop/express-error-native/raw/master/img/stack.png)
 
 ## License
 
