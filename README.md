@@ -1,5 +1,7 @@
 # express-error-with-sources
 
+[![Build Status](https://travis-ci.org/floatdrop/express-error-with-sources.png?branch=master)](https://travis-ci.org/floatdrop/express-error-with-sources)
+
 Enhanced express 3 error handler which inserts source code within error stack for
 JavaScript.
 
