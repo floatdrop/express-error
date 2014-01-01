@@ -1,13 +1,23 @@
+'use strict';
+
 var express = require('express');
 var app = express();
-var routes = require('./routes');
-var expressError = require('..');
+var expressError = require('../..');
 
-app.configure('development', function() {
-    app.use(expressError.express3({contextLinesCount: 3, handleUncaughtException: true}));
+app.get('/', function (req, res) {
+    res.send('Hello World');
 });
 
-app.get('/', routes.index);
-app.get('/error', routes.error);
+app.get('/error', function (req, res) {
+    // SECRETLINE
+    require('./foobar');
+});
+
+app.use(expressError({contextLinesCount: 3}));
+
+app.use(function (err, req, res, next) {
+    res.statusCode = 500;
+    res.end(err.stack);
+});
 
 module.exports = app;
