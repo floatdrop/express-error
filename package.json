@@ -1,6 +1,6 @@
 {
   "name": "express-error-with-sources",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Display source code in express' error stack for JavaScript",
   "keywords": [
     "express3",
