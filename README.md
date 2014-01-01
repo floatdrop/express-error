@@ -1,6 +1,4 @@
-# express-error-with-sources
-
-[![Build Status](https://travis-ci.org/floatdrop/express-error-with-sources.png?branch=master)](https://travis-ci.org/floatdrop/express-error-with-sources)
+# express-error-with-sources [![Build Status](https://travis-ci.org/floatdrop/express-error-with-sources.png?branch=master)](https://travis-ci.org/floatdrop/express-error-with-sources)
 
 Enhanced express 3 error handler which inserts source code within error stack for
 JavaScript.
@@ -19,9 +17,32 @@ app.configure('development', function() {
  * `sendHtml` - Instead passing by modified error, send user nice html with it (default: `false`)
  * `title` - Title of html error page (default: `Error`)
 
-## Screenshot 
+## Html output 
 
 ![screenshot](https://github.com/floatdrop/express-error-with-sources/raw/master/img/screenshot.png)
+
+## Text output
+
+```
+info index.js (DEB_VERSION) Thu Jan 02 2014 00:41:31 GMT+0600 (YEKT) [57038] Worker spawned
+Error: Cannot find module '/Users/floatdrop/jiggle/static/desktop.bundles/index/index.priv.ru.js'
+    at Function.Module._resolveFilename (/Users/floatdrop/jiggle/module.js:338:15)
+    at Function.require.resolve (/Users/floatdrop/jiggle/module.js:384:19)
+    at BemView.render (/Users/floatdrop/jiggle/server/lib/bemView.js:73:42)
+          71: try {
+          72:     if (environment === 'development') {
+          73:         delete require.cache[require.resolve(privFile)];
+          74:         delete require.cache[require.resolve(bemhtmlFile)];
+          75:     }
+          76:
+    at ServerResponse.app.response.render (/Users/floatdrop/jiggle/server/middleware/express-bemView.js:107:17)
+         105:         };
+         106:
+         107:         bemView.render(name, options, fn);
+         108:     };
+         109: };
+         110:
+```
 
 ## License
 
