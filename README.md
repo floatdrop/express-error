@@ -24,10 +24,9 @@ app.configure('development', function() {
 ## Text output
 
 ```
-info index.js (DEB_VERSION) Thu Jan 02 2014 00:41:31 GMT+0600 (YEKT) [57038] Worker spawned
 Error: Cannot find module '/Users/floatdrop/jiggle/static/desktop.bundles/index/index.priv.ru.js'
-    at Function.Module._resolveFilename (/Users/floatdrop/jiggle/module.js:338:15)
-    at Function.require.resolve (/Users/floatdrop/jiggle/module.js:384:19)
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.require.resolve (module.js:384:19)
     at BemView.render (/Users/floatdrop/jiggle/server/lib/bemView.js:73:42)
           71: try {
           72:     if (environment === 'development') {
