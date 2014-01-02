@@ -5,7 +5,7 @@ JavaScript.
 
 ## Usage
 
-```npm i express-error-with-sources --save``
+`npm i express-error-with-sources --save`
 
 ```javascript
 
