@@ -5,7 +5,11 @@ JavaScript.
 
 ## Usage
 
+Install module:
+
 `npm i express-error-with-sources --save`
+
+Insert middleware into your express app:
 
 ```javascript
 
