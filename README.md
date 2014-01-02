@@ -27,13 +27,19 @@ app.configure('development', function() {
 
 ## Html output 
 
+You can see instant example by doing this:
+
 ```bash
 git clone https://github.com/floatdrop/node-parsetrace && cd $_
 npm i && node example
 open http://localhost:3000
 ```
 
+On localhost you should see something like that:
+
 ![screenshot](https://github.com/floatdrop/express-error-with-sources/raw/master/img/screenshot.png)
+
+(If you not - write an issue, we will figure it out)
 
 ## Text output
 
