@@ -2,20 +2,33 @@ doctype html
 html(lang="en")
     head
         title= title
-        | <style type='text/css'>
+        | <style>
         include style.css
         | </style>
+
     body
         div#wrapper
             h1= title
             h2
                 em= statusCode
-                = error
+                = trace.error
             ul#stacktrace
-                each line in stack
-                    if line.indexOf('    at') === 0
-                        li= line
-                    else
+                each frame in trace.frames
+                    li
+                        if frame.function
+                            = 'at ' + frame.function + ' (' + frame.file + ':' + frame.line + ':' + frame.column + ')'
+                        else
+                            = 'at ' + frame.file + ':' + frame.line + ':' + frame.column
+                    if frame.source
                         li.source
-                            pre.prettyprint.lang-javascript= line
+                            pre(class='prettyprint lang-javascript linenums:' + Object.keys(frame.source)[0])
+                                each val, index in frame.source
+                                    if index == frame.line
+                                        = val.code + '\n'
+                                    else
+                                        = val.code + '\n'
+
         script(src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js')
+        | <style>
+        include prettify.css
+        | </style>

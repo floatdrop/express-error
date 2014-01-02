@@ -8,13 +8,15 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha --report lcovonly -- test/*.js --reporter list --timeout 100000"
+    "test": "istanbul cover _mocha --report lcovonly -- test/*.js --reporter list --timeout 100000",
+    "example": "node example"
   },
   "repository": "https://github.com/floatdrop/express-error-with-sources.git",
   "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jade": "~1.0.2"
+    "jade": "~1.0.2",
+    "parsetrace": "~0.1.4"
   },
   "devDependencies": {
     "express": "~3.2.4",

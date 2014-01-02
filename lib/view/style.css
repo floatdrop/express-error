@@ -2,8 +2,6 @@ body {
     margin: 0;
     padding: 20px 100px;
     font: 13px "Helvetica Neue", "Lucida Grande", "Arial";
-    background: #ECE9E9 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ECE9E9));
-    background: #ECE9E9 -moz-linear-gradient(top, #fff, #ECE9E9);
     background-repeat: no-repeat;
     color: #555;
     -webkit-font-smoothing: antialiased;
@@ -146,9 +144,13 @@ ul.source {
     margin-left: 6px;
 }
 
-li.source, li.source pre {
+li, li pre {
     margin: 0;
     padding: 0;
+}
+
+li pre.prettyprinted li:hover {
+    background-color: #f8e5ed;
 }
 
 .error-line {
@@ -166,8 +168,4 @@ li.source, li.source pre {
 
 #stacktrace li {
     margin: 0px;
-}
-
-.prettyprint {
-    border: 0 !important;
 }
