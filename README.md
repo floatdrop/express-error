@@ -33,7 +33,7 @@ open http://localhost:3000
 
 ## Text output
 
-For text-output use (parsetrace)[https://github.com/floatdrop/node-parsetrace].
+For text-output use [parsetrace](https://github.com/floatdrop/node-parsetrace).
 
 ## License
 
