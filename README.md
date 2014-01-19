@@ -33,10 +33,11 @@ You can see instant example by doing this:
 ```bash
 git clone https://github.com/floatdrop/node-parsetrace && cd $_
 npm i && node example
-open http://localhost:3000
 ```
 
-On localhost you should see something like that:
+Open `http://localhost:3000` for exception example or `http://localhost:3000/object` for object example.
+
+On `http://localhost:3000` you should see something like that:
 
 ![screenshot](https://github.com/floatdrop/express-error-with-sources/raw/master/img/screenshot.png)
 
