@@ -12,6 +12,10 @@ app.get('/', function () {
     throw new Error('Bang! Bang!');
 });
 
+app.get('/object', function () {
+    throw process;
+});
+
 app.use(require('..')({contextSize: 3}));
 
 http.createServer(app).listen(app.get('port'), function () {

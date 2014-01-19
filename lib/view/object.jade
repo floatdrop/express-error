@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        title= title
+        | <style>
+        include style.css
+        | </style>
+
+    body
+        div#wrapper
+            h1= title
+            h2
+                em= statusCode
+                = object.toString()
+            pre(class='prettyprint lang-javascript')
+                = util.inspect(object, { showHidden: true, depth: options.depth })
+
+        script(src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js')
+        | <style>
+        include prettify.css
+        | </style>

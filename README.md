@@ -24,6 +24,7 @@ app.configure('development', function() {
 
  * `contextSize` - Number of lines to insert before and after the error line (default: `3`)
  * `title` - Title of html error page (default: `Error`)
+ * `objectDepth` - How deep `util.inspect` should go (default: `5`)
 
 ## Html output 
 
