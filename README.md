@@ -3,6 +3,8 @@
 Enhanced express 3 error handler which inserts source code within error stack for
 JavaScript.
 
+__Deprecated: use [express-stackman](https://github.com/floatdrop/express-stackman) instead__
+
 ## Usage
 
 Install module:
