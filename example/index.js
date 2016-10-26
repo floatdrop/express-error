@@ -4,9 +4,7 @@ var express = require('express');
 var app = express();
 var http = require('http');
 
-app.configure(function () {
-    app.set('port', process.env.PORT || 3000);
-});
+app.set('port', process.env.PORT || 3000);
 
 app.get('/', function () {
     throw new Error('Bang! Bang!');
