@@ -1,6 +1,6 @@
 {
   "name": "express-error-with-sources",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Display source code in express' error stack for JavaScript",
   "keywords": [
     "express3",
@@ -15,17 +15,17 @@
   "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jade": "~1.0.2",
-    "parsetrace": "~0.1.4"
+    "parsetrace": "^0.1.5",
+    "pug": "^2.0.0-beta6"
   },
   "devDependencies": {
-    "express": "~3.2.4",
-    "mocha": "~1.15.1",
-    "proxyquire": "~0.5.1",
-    "sinon": "~1.7.3",
-    "coveralls": "~2.6.0",
-    "mocha-lcov-reporter": "0.0.1",
-    "istanbul": "~0.1.44",
-    "supertest": "~0.8.2"
+    "coveralls": "^2.11.14",
+    "express": "^4.14.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2",
+    "mocha-lcov-reporter": "^1.2.0",
+    "proxyquire": "^1.7.10",
+    "sinon": "^1.17.6",
+    "supertest": "^2.0.1"
   }
 }
